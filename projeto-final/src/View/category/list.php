@@ -17,12 +17,12 @@
                 $description = $category['description'];
 
                 echo"<tr>
-                    <td>$id</td>
-                    <td>$name</td>
-                    <td>$description</td>
+                    <td>{$id}</td>
+                    <td>{$name}</td>
+                    <td>{$description}</td>
                     <td>
-                        <a class='btn btn-sm btn-outline-warning' href='/categorias/editar?id=$id'>Editar</a>
-                        <a class='btn btn-sm btn-outline-danger' href='/categorias/excluir?id=$id'>Exluir</a>
+                        <a class='btn btn-sm btn-outline-warning' href='/categorias/editar?id={$id}'>✏️</a>
+                        <a class='btn btn-sm btn-outline-danger' href='/categorias/excluir?id={$id}'>🗑️</a>
                     </td>
                 </tr>";
             }

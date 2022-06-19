@@ -26,7 +26,7 @@ class CategoryController extends AbstractController
             $name = $_POST['name'];
             $description = $_POST['description'];
 
-            $query = "INSERT INTO tb_category (name, description) VALUE ('{$name}', '{$description}')";
+            $query = "INSERT INTO tb_category (name, description) VALUES ('{$name}', '{$description}')";
 
             $con = Connection::getConnection();
             $result = $con->prepare($query);
